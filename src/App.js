@@ -12,7 +12,7 @@ function App() {
   const fetchData = async () => {
     try {
       const response = await fetch(
-        "https://vishalvsk.github.io/json-deployed/product.json"
+        "https://vrudali28.github.io/ProductsFolder/products.json"
       );
       const jsonData = await response.json();
       setProducts(
@@ -52,10 +52,10 @@ function App() {
             <h2>{product.title}</h2>
             <p>{product.description}</p>
             <p>Price: ${product.price}</p>
-            <img
-              src={product.thumbnail}
+            <img className="image"
+              src={product.images}
               alt={product.title}
-              className="thumbnail"
+              
             />
             <h4>We can set the quantity here</h4>
             <input

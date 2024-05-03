@@ -1,3 +1,14 @@
+This project is a demonstration of using React's Context API to manage state in a shopping cart application. It allows users to view a list of products, adjust the quantity of each product, and view the total quantity and amount of items added to the cart.
+
+## Features
+
+- Display a list of products fetched from an external JSON file.
+- Allow users to adjust the quantity of each product.
+- Display a cart showing the total quantity and total amount of items added.
+- Calculate the total quantity and total amount dynamically based on the items added to the cart.
+- Responsive design.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

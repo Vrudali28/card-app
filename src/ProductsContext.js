@@ -44,9 +44,12 @@ export const ProductsProvider = ({ children }) => {
     return { totalQuantity, totalAmount };
   };
 
+  // Calculate totals whenever products change
+  const totals = calculateTotal();
+
   return (
     <ProductsContext.Provider
-      value={{ products, updateQuantity, calculateTotal }}
+      value={{ products, updateQuantity, totals }}
     >
       {children}
     </ProductsContext.Provider>
